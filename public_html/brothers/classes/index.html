@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Classes</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="http://gammazetaalpha.ucsd.edu/css/bootstrap.min.css">
+<style>
+.previewClassBox {
+	width: 350px;
+	max-width: 350px;
+	max-height: 250px;
+	font-size: 15px;
+	text-align: center;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+	padding: 0px;
+	display: inline-block;
+	transition: box-shadow .1s;
+	-webkit-transition: box-shadow .1s;
+}
+.previewClassBox img {
+	width: 350px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	transition: top 1s;
+	-webkit-transition: top 1s; /* Safari */
+}
+.previewClassBox p {
+	line-height: 26px;
+	margin: 0px;
+	max-height: 200px;
+	text-align: center;
+	vertical-align: middle !important;
+}
+.previewClassBox h3 {
+	font-size: 25px;
+	margin: 0px;
+}
+
+.previewClassBox .centerList {
+	height: 200px;
+	max-height: 200px;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	justify-content: center; /* align horizontal */
+}
+.twoCenterList {
+	height: 200px;
+	max-height: 200px;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-flex; /* Safari */
+	-webkit-flex-flow: row; /* Safari 6.1+ */
+	display: flex;
+	flex-flow: row ;
+	justify-content: center; /* align horizontal */
+}
+.twoCenterList p {
+	width: 50%;
+}
+.previewClassBox:hover img {
+	top: -200px;
+}
+.previewClassBox:hover {
+	box-shadow: rgb(122,122,122) 0px 0px 10px -1px;
+}
+ @media(max-width:400px) {
+.previewClassBox {
+	width: 100%;
+	height: auto;
+}
+.previewClassBox p {
+	line-height: 22px;
+	font-size: 16px;
+	padding: 0px;
+	width: 100%;
+	text-align: center;
+}
+.previewClassBox h3 {
+	clear: both;
+}
+.previewClassBox img {
+	width: 100%;
+	z-index: 2;
+	margin-bottom: 5px;
+}
+.previewClassBox .centerList {
+	top: 0px;
+	z-index: 0;
+	width: 100%;
+}
+
+}
+</style>
+<link rel="stylesheet" href="http://gammazetaalpha.ucsd.edu/css/main.css">
+<link rel="stylesheet" href="http://gammazetaalpha.ucsd.edu/css/bootstrap-theme.min.css">
+<!--   <script>
+        window.onload = function(){location.replace("http://ucsdgammas.com");}
+        </script>-->
+
+<script src="http://gammazetaalpha.ucsd.edu/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+<!-- Include this following line in all files to load main Navigation -->
+<script src="http://gammazetaalpha.ucsd.edu/js/mainNavigation.js"></script>
+<!-- Include the line on top to load main Navigation -- >
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h2>Nu Chapter Classes</h2>
+    <div style="text-align: center;">
+      <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Founding.jpg">
+        <div class="twoCenterList" >
+          <p>Miguel Cruz<br>
+            Andrew De La Rosa<br>
+            Christopher Gamez<br>
+            Juan Lopez<br>
+            Alberto Mata<br>
+            Eliezer Mendoza<br>
+            Oscar Mendoza
+          </p>
+          <p>Tomas Oliva<br>
+            Rigorberto Plascencia<br>
+            Francisco Ramos<br>
+            Marco Rizo Jr.<br>
+            Jose Rodriguez<br>
+            Fernando Serrato</p>
+        </div>
+        <h3>Founding Fathers</h3>
+      </div>
+      <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Alpha.jpg">
+        <div class="twoCenterList" >
+          <p>Juan Betancourt<br>
+            Juvenal Caporale<br>
+            Daniel Diaz<br>
+            Adrian Eribez<br>
+            Andrew Flores<br>
+
+          </p>
+          <p>Ernesto Gonzalez<br>
+            Horacio Hernandez<br>
+            Luiz Mendez<br>
+            Hipolito Valdez<br>
+            Christian Zepeda</p>
+        </div>
+        <h3>Alpha Class</h3>
+      </div>
+      <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Beta.jpg">
+        <div class="centerList">
+          <p>Michael Moreno<br>
+            Gary Jara<br>
+            Jesus Ramirez<br>
+            Jose Santana</p>
+        </div>
+        <h3>Beta Class</h3>
+      </div>
+      <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Gamma.jpg">
+        <div class="centerList">
+          <p>Adriel Lara<br>
+            Carlos Guerrero<br>
+            Erick Serrano<br>
+            Roger Zuniga<br>
+            Julio Rios<br>
+            Jimmy Tran</p>
+        </div>
+        <h3>Gamma Class</h3>
+      </div>
+      <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Delta.jpg">
+        <div class="centerList">
+          <p>Jose Garcia<br>
+            Cristian Ortiz</p>
+        </div>
+        <h3>Delta Class</h3>
+      </div>
+      <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Epsilon.jpg">
+        <div class="centerList">
+          <p>Armando Ruiz<br>
+            Josael Segovia<br>
+            Andrew Meraz<br>
+            Ismael De Loza<br>
+            Ivan Macias<br>
+            Jonathan Vega<br>
+            Jesse Bojorquez</p>
+        </div>
+        <h3>Epsilon Class</h3>
+      </div>
+      <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Zeta.jpg">
+        <div class="twoCenterList" >
+          <p>Elmer Flores<br>
+            Adolfo Rivera<br>
+            Francisco Moreno<br>
+            Frank Hinojos<br>
+            Michael Lopez</p>
+          <p>Jose Covarrubias<br>
+            Jonathon Magaña<br>
+            Teodoro Navarro<br>
+            Anthony Pelayo</p>
+        </div>
+        <h3>Zeta Class</h3>
+      </div>
+      <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Eta.jpg">
+        <div class="centerList">
+          <p>Saul Montaño<br>
+            Carlos Garcia<br>
+            Mitchell Franco<br>
+          </p>
+        </div>
+        <h3>Eta Class</h3>
+      </div>
+      <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Theta.jpg">
+        <div class="twoCenterList" >
+          <p>Luiggi Mori<br>
+            Andres Albarran<br>
+            Josu Gonzalez<br>
+            Abelardo Mosqueda
+          </p>
+
+          <p>Jonathan Riestra<br>
+            Victor Cruz<br>
+            Jonathan Banuelos-Villa<br>
+            Luis Cortes</p>
+       </div>
+        <h3>Theta Class</h3>
+      </div>
+      <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Iota.jpg">
+        <div class="twoCenterList" >
+          <p>Jorge Montiel
+            <br>
+            Alberto Barraza<br>
+            Hector Vega<br>
+            Elias Ramirez<br>
+            Bryan Linares<br>
+            Fernando Torres
+          </p>
+
+          <p>Hollam Law<br>
+            Ivan Mariaca<br>
+            Gonzalo Pizarro<br>
+            Angelo Lecce<br>
+            Oscar Nieto</p>
+        </div>
+        <h3>Iota Class</h3>
+      </div>
+      <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Kappa.jpg">
+        <div class="centerList">
+          <p>Cesar Mejia<br>
+            Andy Ferruzca<br>
+            Jason Flores<br>
+            Bennett Mok<br>
+            Christian Reyes Rodriguez<br>
+            Jose Yurivilca<br>
+            Arturo Andrade</p>
+        </div>
+        <h3>Kappa Class</h3>
+      </div>
+
+      <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Lambda.jpg">
+        <div class="twoCenterList" >
+          <p>Daniel Gonzalez<br>
+            Rendell Sino<br>
+            Jesus Alonso<br>
+            Cristian De Leon<br>
+            Francisco Mendez<br>
+            Reynaldo Garduno<br>
+          </p>
+
+          <p>Giovanny Velazquez<br>
+            Abel Garcia<br>
+            Francisco Garcia<br>
+            Esteban Alcalá<br>
+            Azael Rodriguez<br>
+            Samuel Gutierrez</p>
+        </div>
+        <h3>Lambda Class</h3>
+      </div>
+
+      <div class="previewClassBox" > <img  src="http://gammazetaalpha.ucsd.edu/images/Classes/Mu.jpg">
+        <div class="twoCenterList">
+          <p>Juan Martinez<br>
+            Xavier Tejeda<br>
+            Henry Ajanel<br>
+            Ramon Uribe</p>
+            <p>
+            Adam Stallings<br>
+            Marvin Moreano<br>
+            Carlos Samaniego<br>
+            Edwin Estrada
+          </p>
+        </div>
+        <h3>Mu Class</h3>
+      </div>
+    <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Nu.jpg">
+        <div class="centerList">
+         <p>Mario Rodriguez<br>
+         Bryan Martinez<br>
+         Edgar Garcia<br>
+         Michael Diestra<br>
+         Steve Silva<br>
+         Heraldo Martinez<br>
+         Alejandro Ramirez</p>
+        </div>
+         <h3>Nu Class</h3>
+         </div>
+
+      <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Xi.jpg">
+        <div class="twoCenterList" >
+          <p>Julian Antonio<br>
+             Pablo Tejeda<br>
+             Jason Monroy<br>
+             Gabriel Gonzalez<br>
+             Luis Torres<br>
+             Damian Fuentes
+          </p>
+        </div>
+        <h3>Xi Class</h3>
+      </div>
+
+			<div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Omicron.JPG">
+				<div class="twoCenterList" >
+					<p>Ivan Ibarra<br>
+						 Mario Perez<br>
+						 Brian J. Leal<br>
+						 Jeremy Arias<br>
+						 Vicente Perez<br>
+						 Elvis Garcia<br>
+						 Raul Uriostegui Jr.
+					</p>
+				</div>
+				<h3>Omicron Class</h3>
+			</div>
+
+      <div class="previewClassBox" > <img src="http://gammazetaalpha.ucsd.edu/images/Classes/Pi.jpg">
+        <div class="twoCenterList" >
+          <p>Jorge Pachas<br>
+             Carlos Vizcaya<br>
+             Jorge Carmona<br>
+             Juan Carlos Mondragon<br>
+             Emilio Marquez<br>
+             Omar Bautista<br>
+             </p>
+
+             <p>
+             David Martinez<br>
+             Hermilo Castro<br>
+             Ivan Toscano<br>
+             Marco Serpas<br>
+             Alejandro Chavez<br>
+             Michael Hernandez</p>
+        </div>
+        <h3>Pi Class</h3>
+      </div>
+
+      </div>
+      <hr>
+    </div>
+    <!-- /container -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="http://gammazetaalpha.ucsd.edu/js/vendor/bootstrap.min.js"></script>
+    <script src="http://gammazetaalpha.ucsd.edu/js/main.js"></script>
+    <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+  </div>
+</div>
+<footer>
+  <div style="float: right;">
+    <iframe  src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FGamma-Zeta-Alpha-UC-San-Diego%2F320563148794&amp;width&amp;height=75&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:75px;" allowTransparency="true"></iframe>
+  </div>
+  <p>&copy; Gamma Zeta Alpha Fraternity Inc. Nu Chapter</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Rush Gammas</title>
+<meta name="description" content="Find our more about Gamma Zeta Alpha's Fall Rush at UC San Diego.">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="http://gammazetaalpha.ucsd.edu/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://gammazetaalpha.ucsd.edu/css/main.css">
+<link rel="stylesheet" href="http://gammazetaalpha.ucsd.edu/css/bootstrap-theme.min.css">
+<script src="http://gammazetaalpha.ucsd.edu/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://gammazetaalpha.ucsd.edu/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+<script src="http://gammazetaalpha.ucsd.edu/js/vendor/bootstrap.min.js"></script>
+<script src="http://gammazetaalpha.ucsd.edu/js/js/main.js"></script>
+<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+<style type="text/css">
+[onclick] {
+ cursor: pointer;
+}
+.container p {
+	font-size: 16px;
+}
+.nav-but {
+	font-weight: bold;
+	width: 50px;
+	font-size: 16px !important;
+}
+#active {
+	background-color: rgba(0,0,0,.8);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 20px;
+	text-align: center;
+	display: flex;
+}
+#active .event {
+	max-width: 800px;
+	width: 100%;
+	z-index: 99;
+	margin: auto;
+	position: relative;
+	height: auto;
+}
+#active .exit p {
+	width: 24px;
+	height: 24px;
+	font-size: 20px;
+	background-color: hsla(0, 100%, 50%, 0.77);
+	font-weight: bolder;
+	color: #FFF;
+	text-align: center;
+	margin: 0px;
+	float: right;
+	padding: 0px;
+}
+#active .exit {
+	width: 100%;
+	text-align: right;
+	display: block;
+	height: 25px;
+	background-color: black;
+}
+#active .event {
+	max-width: 800px;
+	width: 100%;
+	z-index: 99;
+	margin: auto;
+	position: relative;
+	background-color: #FFF;
+}
+#active .event h3 {
+	margin-top: 15px;
+	font-size: 28px;
+	line-height: 18px;
+}
+.event {
+	background-color: rgba(204, 204, 204, 0.06);
+	height: 275px;
+	position: relative;
+}
+.event h3 {
+	margin: 0px;
+	font-size: 18px;
+}
+.event em {
+	font-size: 15px;
+	border-top: 1px solid rgba(0,0,0,.2);
+}
+.event p {
+	font-size: 12px;
+	margin-top: 5px;
+}
+p.learn-more {
+	/* font-weight: bolder; */
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	/* left: 10%; */
+	width: 100%;
+	margin-bottom: 3px;
+	/* box-shadow: 0px 6px 7px -4px; */
+    /* border-radius: 42px; */
+	background-color: rgb(45, 45, 47);
+	color: rgb(234, 230, 230);
+}
+#active .event .learn-more {
+	display: none;
+}
+#active .event .event-desc {
+	display: block;
+}
+#active .small {
+	display: none;
+}
+#active .large {
+	float: left;
+	width: 320px;
+	height: 320px;
+	display: block;
+	margin: 5px;
+	max-width: none;
+	max-height: none;
+}
+#active .event-nav {
+	display: table;
+}
+.event table {
+	clear: both;
+}
+.event-container {
+	display: inline-table;
+	z-index: 1;
+	width: 200px;
+	margin: 3px;
+	border: 1px solid rgba(0,0,0,.3);
+}
+.event-container .event-desc {
+	display: none;
+}
+.event-container .event img {
+	width: 100%;
+	margin: 0px;
+}
+.event-container .event-nav {
+	display: none;
+}
+.event-container .exit {
+	display: none;
+}
+.event-container .small {
+	display: block;
+	width: 100%;
+}
+.event-container .large {
+	display: none;
+}
+.headshotFrame {
+	max-width: 185px;
+	width: 185px;
+	height: 270px;
+	text-align: center;
+	padding: 0px;
+	background-color: #EFEFEF;
+	margin: 4px;
+	border: solid 1px black;
+	box-shadow: 2px 0px 10px 1px black;
+	position: relative;
+	float: right;
+}
+.headshotFrame > img {
+	width: 180px;
+	height: 180px;
+	margin: 0px;
+	position: relative;
+	top: 0px;
+}
+.headshotFrame h3 {
+	padding: 0px;
+	margin: 1px 0px;
+	font-size: 16px;
+}
+.headshotFrame p {
+	margin: 0px;
+	font-size: 12px;
+}
+.headshotFrame .email {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	top: none;
+}
+.button {
+	color: white;
+	padding: 5px;
+	background-color: #101010;
+	width: 100%;
+	max-width: 200px;
+	text-align: center;
+	border-radius: 18px;
+	box-shadow: 0px 3px 10px -3px #000000;
+	margin: 5px;
+	;
+	font-size: 18px;
+}
+#active .event p {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.empty-container {
+	display: inline-table;
+	width: 200px;
+	margin: 3px;
+	height: 5px;
+}
+@media only screen and (max-width: 450px) {
+.headshotFrame {
+	width: 125px !important;
+	height: 210px !important;
+}
+.headshotFrame > img {
+	width: 120px !important;
+	height: 120px !important;
+}
+.headshotFrame h3 {
+	font-size: 12px !important;
+}
+.headshotFrame p {
+	font-size: 11px !important;
+}
+.headshotFrame .email {
+	width: 30px !important;
+	height: 30px !important;
+}
+.event-container {
+	width: 140px;
+}
+.event h2 {
+	margin-top: 5px;
+}
+.event em {
+	font-size: 13px;
+}
+.event p {
+	font-size: 11px;
+}
+#active .large {
+	float: none;
+	width: 220px;
+	height: 220px;
+	margin: auto;
+}
+#active .event {
+	text-align: center;
+}
+}
+</style>
+</head>
+<body>
+<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+<!-- Include this following line in all files to load main Navigation -->
+<script src="http://gammazetaalpha.ucsd.edu/js/mainNavigation.js"></script>
+<!-- Include the line on top to load main Navigation -- >
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+<div class="container" style=" text-align: left">
+  <script language="javascript">
+
+	function activateEvent(ev){
+		var active = document.getElementById("active");
+
+		if(active != null)
+			active.id = "";
+
+		ev.id = "active";
+		ev.onclick = "";
+	}
+
+	function exit(){
+
+		var ev = document.getElementById("active");
+		ev.id = "";
+			}
+	function nextEvent(){
+		var ev = document.getElementById("active");
+		ev.id = "";
+		ev.nextElementSibling.id = "active";
+	}
+	function prevEvent(){
+		var ev = document.getElementById("active");
+		ev.id = "";
+		ev.previousElementSibling.id = "active";
+	}
+	function expand(){
+		document.getElementById("more-info").style.display = "block";
+		document.getElementById("more").style.display = "none";
+		document.getElementById("less").style.display = "block";
+	}
+	function collapse(){
+		document.getElementById("more-info").style.display = "none";
+		document.getElementById("more").style.display = "block";
+		document.getElementById("less").style.display = "none";
+	}
+</script>
+  <div > <img class="banner" style="width: 100%" src="/images/banners/banner-rush2015.jpg" />
+    <h1>Rush Fall 2019</h1>
+    <!--<div style="width: 200px; padding: 15px; float: right; margin: 5px 5px 10px 10px;">
+    <p>Want to stay in the loop?<br>
+      Click here to fill out your information. We will keep you updated on upcoming rush events and apllication deadlines.</p>
+  </div>-->
+    <div class="headshotFrame"> <img src="../images/headshots/Undergraduates/Adam_Stallings.jpg">
+      <h3>VACANT</h3>
+      <p>Dean of New Membership</p>
+      <p>Cell: N/A</p>
+    <a href="mailto:nudean.gammas@gmail.com" title="Mail Dean"><img title="Mail Dean" class="email" src="http://gammazetaalpha.ucsd.edu/images/email-icon.png"></a> </div>
+    <h2>What is Gamma Zeta Alpha</h2>
+    <p>Gamma Zeta Alpha Fraternity Inc. is the first Latino interest fraternity established on the west coast at California State University Chico on 1987. From its establishment Gamma Zeta Alpha Fraternity Inc. has been committed to Academic Excellence, Community Service and the maintenance of the Latino culture through brotherhood.</p>
+    <p>Gamma Zeta Alpha Fraternity Inc. Nu Chapter was established at the University of California San Diego on 2004 by 13 gentlemen. Since 2004 we have crossed 87 brothers into the brotherhood of Gamma Zeta Alpha Fraternity Inc. molding each of our brothers into future leaders through professionalism.</p>
+    <h2>What is Rush</h2>
+    <p>Rush is typically a 2-3 week period where you get to know the brothers of Gamma Zeta Alpha Fraternity Inc. and get a taste of what our fraternity is about. We host various events on and off campus and all events are completely free of charge with rides also provided as well.
+
+    <div style="display: none;" id="more-info">
+      <h2>Why Rush Gamma Zeta Alpha</h2>
+      <p><strong>Academics:</strong> One thing that we stress as Gammas is our commitment to our academics. That is why we hold every brother to the expectation of having a 2.5 GPA and higher. To accomplish this we have mandatory study hours that we must meet every week in order to have exceptional grades.</p>
+      <p><strong>Community Service:</strong> Along with excelling in academics we make time to give back to our surrounding communities. Throughout the academic year we host various community service events such as toy drives, can drives, bone marrow drives etc. </p>
+      <p><strong>Brotherhood:</strong> Whether it be playing sports, working out, studying, getting something to eat our brother are always hanging out. Throughout the academic year we host various brotherhood events as well where we get to know our alumni better and simply have fun. College only lasts four years but our brotherhood lasts for life and we truly mean that. </p>
+      <p><strong>Networking:</strong> Not only can you network with the brother at UCSD but you can also network with over 1,000 brothers nationwide that can help you land your ideal career and can provide helpful tips to become a successful individual. Being a part of this brotherhood already gets your foot inside the door of the professional world.</p>
+      </p>
+    </div>
+    <div  style="display: block; width: 150px; float: right; text-align: right;" id="more" onClick="expand()">
+      <p>Read More</p>
+    </div>
+    <div style="display: none;width: 150px; float: right; text-align: right;" id="less" onClick="collapse()">
+      <p>Read Less</p>
+    </div>
+    </p>
+    <table style="margin-top:15px; width: 100%;">
+      <tr>
+        <td align="center"><p class="button"><a href="/docs/Gamma_Zeta_Alpha_Application.pdf">Download Application</a></p></td>
+        <!--<td align="center"><p class="button">Frequently Ask Questions</p></td>
+    --></tr>
+    </table>
+    <div style="clear: both;"></div>
+    <h2>Rush Events</h2>
+    <div style="text-align: center;">
+      <div  class="event-container">
+        <div class="event">
+          <div class='exit' onclick='exit()'>
+            <p>X</p>
+          </div>
+          <img  class="small" src="/images/rush/mgc.jpg" /> <img  class="large" src="/images/rush/mgc.jpg" />
+          <h3>MGC Info Night<br />
+            <em></em></h3>
+          <p>Tuesday Sept. 27, 2016<br>
+            Price Center Ballroom<br>
+            7:00pm - 9:00pm</p>
+          <p class="learn-more" onclick="activateEvent(this.parentElement.parentElement)" >Learn More </p>
+          <div class="event-desc">
+            <p>Interested in rushing Gammas or other Mulicultural Greek organization? Come join us at the Multicultural Greek Council Informational. We will be introducing ourselves and explaining what it is to be a Gamma and how you can join. Get to know other organizations as well as socialize with some representatives from every organization. Food and snacks will be provided.</p>
+          </div>
+          <table width="100%" class="event-nav">
+            <tr>
+              <td align="right" ><p class="nav-but" onClick="nextEvent()">Next</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div  class="event-container">
+        <div class="event">
+          <div class='exit' onclick='exit()'>
+            <p>X</p>
+          </div>
+          <img  src="/images/rush/Tag_Laser.jpg" class="small"/> <img  src="/images/rush/Tag_Laser_small.jpg" class="large"/>
+          <h3>Laser Tag<br />
+            <em>with Lambda Theta Nu</em></h3>
+          <p>Thursday Sept. 29, 2016<br>
+            Ultra Zone<br>
+          7pm </p>
+          <p class="learn-more" onclick="activateEvent(this.parentElement.parentElement)" >Learn More</p>
+          <div class="event-desc">
+            <p>We will be heading to Ultra Zone for some laser tag fun with the lovely ladies of Lambda Theta Nu. This is an opportunity for you to meet the brothers and socialize with other greek life members.</p>
+            <p>We will begin shutting interests at 6:00 pm at the Triton Statue. </p>
+          </div>
+          <table width="100%" class="event-nav">
+            <tr>
+              <td align="left" width="50%"><p class="nav-but" onclick="prevEvent()">Previous</p></td>
+              <td align="right" width="50%"><p class="nav-but" onClick="nextEvent()">Next</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div  class="event-container">
+        <div class="event">
+          <div class='exit' onclick='exit()'>
+            <p>X</p>
+          </div>
+          <img  src="/images/rush/saz-rush-small.jpg" class="small"/> <img  src="/images/rush/saz-rush.jpg" class="large"/>
+          <h3>Beach Night<br>
+            <em>with Sigma Alpha Zeta</em></h3>
+          <p>Friday Sept 30, 2016<br>
+            La Jolla Shores<br>
+           5:00pm</p>
+          <p class="learn-more" onclick="activateEvent(this.parentElement.parentElement)" >Learn More</p>
+          <div class="event-desc">
+            <p>UC San Diego is known for two things, Gammas and Beaches. Get to meet the beach while socializing with Sigma Alpha Zeta. With your feet in the sand and some s’mores in your hand, you’ll ask yourself why you couldn’t have gone sooner. </p>
+            <p>Rides will be provided. </p>
+          </div>
+          <table width="100%" class="event-nav">
+            <tr>
+              <td align="left" width="50%"><p class="nav-but" onclick="prevEvent()">Previous</p></td>
+              <td align="right" width="50%"><p class="nav-but" onClick="nextEvent()">Next</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div  class="event-container">
+        <div class="event">
+          <div class='exit' onclick='exit()'>
+            <p>X</p>
+          </div>
+          <img  src="/images/rush/info-night-small.jpg" class="small"/> <img  src="/images/rush/info-night.jpg" class="large"/>
+          <h3>First Informational<br>
+            <em> with Gamma Zeta Alpha</em></h3>
+          <p>Friday Oct. 3, 2016<br>
+          Price Center
+            7pm-9pm</p>
+          <p class="learn-more" onclick="activateEvent(this.parentElement.parentElement)" >Learn More</p>
+          <div class="event-desc">
+            <p>We will be hosting our first informational night where you can get a more in depth feel of our fraternity. You will be able to ask questions and learn more about our organization. </p>
+
+          </div>
+          <table width="100%" class="event-nav">
+            <tr>
+              <td align="left" width="50%"><p class="nav-but" onclick="prevEvent()">Previous</p></td>
+              <td align="right" width="50%"><p class="nav-but" onClick="nextEvent()">Next</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div  class="event-container">
+        <div class="event">
+          <div class='exit' onclick='exit()'>
+            <p>X</p>
+          </div>
+          <img  src="/images/rush/ethnica-small.jpg" class="small"/> <img  src="/images/rush/ethnica.jpg" class="large"/>
+          <h3>Noche Etnica<br>
+            <em>with Phi Lambda Rho</em></h3>
+          <p>Wednesday Oct.5<sup></sup>, 2016<br>
+            Off Campus<br>
+            7:00pm</p>
+          <p class="learn-more" onclick="activateEvent(this.parentElement.parentElement)" >Learn More</p>
+          <div class="event-desc">
+            <p>We will be having a Noche Etnica social with the ladies of Phi Lambda Rho Sorority, Inc. Where you will get the chance to interact and learn more about Latin American culture. Ice breakers and games will be based on the theme. Rides will be provided.</p>
+          </div>
+          <table width="100%" class="event-nav">
+            <tr>
+              <td align="left" width="50%"><p class="nav-but" onclick="prevEvent()">Previous</p></td>
+              <td align="right" width="50%"><p class="nav-but" onClick="nextEvent()">Next</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div  class="event-container">
+        <div class="event">
+          <div class='exit' onclick='exit()'>
+            <p>X</p>
+          </div>
+          <img  src="/images/rush/pro-ws-small.jpg" class="small"/> <img  src="/images/rush/pro-ws.jpg" class="large"/>
+          <h3>Professional Development Workshop<br>
+            <em>with Alumni</em></h3>
+          <p>Thursday Oct.6, 2016<br>
+            Price Center<br>
+           7pm-9pm</p>
+          <p class="learn-more" onclick="activateEvent(this.parentElement.parentElement)" >Learn More</p>
+          <div class="event-desc">
+            <p>The gentlemen of Gamma Zeta Alpha Fraternity, Inc., will have alumni members present in order to answer questions that the interests may have about the professional world, and show that connections are made by joining a fraternity.</p>
+            <p>We will begin shuttling interests at 7:30 pm at the Triton Statue.</p>
+          </div>
+          <table width="100%" class="event-nav">
+            <tr>
+              <td align="left" width="50%"><p class="nav-but" onclick="prevEvent()">Previous</p></td>
+              <td align="right" width="50%"><p class="nav-but" onClick="nextEvent()">Next</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div  class="event-container">
+        <div class="event">
+          <div class='exit' onclick='exit()'>
+            <p>X</p>
+          </div>
+          <img  src="/images/rush/bowling.jpg" class="small"/> <img  src="/images/rush/bowling.jpg" class="large"/>
+          <h3>Bowling<br>
+            <em>with Sigma Pi Alpha</em></h3>
+          <p>Friday Oct. 7 2016<br>
+            Kearny Mesa Bowl<br>
+            9:00pm</p>
+          <p class="learn-more" onclick="activateEvent(this.parentElement.parentElement)" >Learn More</p>
+          <div class="event-desc"><p>We will be having a bowling social with the ladies of Sigma Pi Alpha Sorority, Inc. Where interests of our fraternity will be able to interact through icebreakers and bowling. Rides will be provided.</p></div>
+          <table width="100%" class="event-nav">
+            <tr>
+              <td align="left" width="50%"><p class="nav-but" onclick="prevEvent()">Previous</p></td>
+              <td align="right" width="50%"><p class="nav-but" onClick="nextEvent()">Next</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div  class="event-container">
+        <div class="event">
+          <div class='exit' onclick='exit()'>
+            <p>X</p>
+          </div>
+          <img  src="/images/rush/Giesel.jpg" class="small"/> <img  src="/images/rush/Giesel.jpg" class="large"/>
+          <h3>Study Session<br>
+            <em>with Gamma Zeta Alpha</em></h3>
+          <p>Saturday Oct. 8, 2015<br>
+           Geisel Library<br>
+            10:00am-4pm</p>
+          <p class="learn-more" onclick="activateEvent(this.parentElement.parentElement)" >Learn More</p>
+          <div class="event-desc">
+            <p>The gentlemen of Gamma Zeta Alpha Fraternity, Inc. will be having a group study session to help promote studying early in the quarter to stay on top of grades and to show that we strive for Academic Excellence.</p>
+
+          </div>
+          <table width="100%" class="event-nav">
+            <tr>
+              <td align="left" width="50%"><p class="nav-but" onclick="prevEvent()">Previous</p></td>
+              <td align="right" width="50%"><p class="nav-but" onClick="nextEvent()">Next</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div  class="event-container">
+        <div class="event">
+          <div class='exit' onclick='exit()'>
+            <p>X</p>
+          </div>
+          <img  src="/images/rush/cleanup-small.jpg" class="small"/> <img  src="/images/rush/cleanup.jpg" class="large"/>
+          <h3>Tijuana River Valley Cleanup<br>
+             <em>with Gamma Zeta Alpha</em></h3>
+          <p>Sunday Oct. 9, 2016<br>
+            Tijuana River Valley<br>
+            10:00am-1:00pm</p>
+          <p class="learn-more" onclick="activateEvent(this.parentElement.parentElement)" >Learn More</p>
+          <div class="event-desc">
+            <p>We will be hosting a community service event where we plan to help our environment by cleaning up a location of San Diego. Interests of our fraternity will be exposed to the community service aspect of our fraternity. Rides will be provided.</p>
+
+          </div>
+          <table width="100%" class="event-nav">
+            <tr>
+              <td align="left" width="50%"><p class="nav-but" onclick="prevEvent()">Previous</p></td>
+              <td align="right" width="50%"><p class="nav-but" onClick="nextEvent()">Next</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div  class="event-container">
+        <div class="event">
+          <div class='exit' onclick='exit()'>
+            <p>X</p>
+          </div>
+          <img  src="/images/rush/2nd-info-night-small.jpg" class="small"/> <img  src="/images/rush/2nd-info-night.jpg" class="large"/>
+          <h3>Second Informational<br>
+            <em>with Gamma Zeta Alpha</em></h3>
+          <p>Monday Oct 10, 2016<br>
+            Price Center<br>
+            7:00pm - 9:00pm</p>
+          <p class="learn-more" onclick="activateEvent(this.parentElement.parentElement)" >Learn More</p>
+          <div class="event-desc"><p> A second informational night will be held to give the interests more information of what Gamma Zeta Alpha Fraternity, Inc. is about and the various aspects that go into making this fraternity.
+
+          </div>
+          <table width="100%" class="event-nav">
+            <tr>
+              <td align="left" width="50%"><p class="nav-but" onclick="prevEvent()">Previous</p></td>
+              <td align="right" width="50%"><p class="nav-but" onClick="nextEvent()">Next</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div  class="event-container">
+        <div class="event">
+          <div class='exit' onclick='exit()'>
+            <p>X</p>
+          </div>
+          <img  src="/images/rush/wing-night-small.jpg" class="small"/> <img  src="/images/rush/wing-night.jpg" class="large"/>
+          <h3>Wing Night<br>
+            <em>with Gamma Zeta Alpha</em></h3>
+          <p>Wednesday Oct. 12, 2016<br>
+            Callahan's Pub and Brewery<br>
+            7:00pm - 10:00pm</p>
+          <p class="learn-more" onclick="activateEvent(this.parentElement.parentElement)" >Learn More</p>
+          <div class="event-desc"><p> The gentlemen of Gamma Zeta Alpha Fraternity, Inc. will be having a Wing Night at Callahan’s Pub and Brewery, in which interests of our fraternity will be able to get to know the brothers, all while enjoying some delicious wings! Rides will be provided.
+         </p></div>
+          <table width="100%" class="event-nav">
+            <tr>
+              <td align="left" ><p class="nav-but" onclick="prevEvent()">Previous</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="empty-container"> </div>
+      <div class="empty-container"> </div>
+    </div>
+
+    <!-- /container -->
+    <hr>
+  </div>
+</div>
+<footer>
+  <div style="float: right;">
+    <iframe  src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FGamma-Zeta-Alpha-UC-San-Diego%2F320563148794&amp;width&amp;height=75&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:75px;" allowTransparency="true"></iframe>
+  </div>
+  <p style="min-width: 150px;">&copy; Gamma Zeta Alpha Fraternity Inc. Nu Chapter</p>
+</footer>
+</body>
+</html>

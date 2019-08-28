@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation>
+	<subPages title="About Us">
+		<page>
+			<title>National History</title>
+			<link>http://gammazetaalpha.ucsd.edu/about_us/</link>
+		</page>
+		<page>
+			<title>Principles</title>
+			<link>http://gammazetaalpha.ucsd.edu/about_us/principles/</link>
+		</page>
+	</subPages>
+	<subPages title="Brothers">
+		<page>
+			<title>Active Members</title>
+			<link>http://gammazetaalpha.ucsd.edu/brothers/</link>
+		</page>
+		<page>
+			<title>Classes</title>
+			<link>http://gammazetaalpha.ucsd.edu/brothers/classes/</link>
+		</page>
+		<page>
+			<title>Meet Alumni</title>
+			<link>http://gammazetaalpha.ucsd.edu/brothers/alumni/</link>
+		</page>
+	</subPages>
+	<subPages>
+		<page>
+		   <title>Chapters</title>
+		   <link>http://gammazetaalpha.ucsd.edu/chapters/</link>
+		</page>
+	</subPages>
+	<subPages>
+		<page>
+		   <title>Rush</title>
+		   <link>http://gammazetaalpha.ucsd.edu/rush/</link>
+		</page>
+	</subPages>
+	<subPages title="Resources">
+	    <page>
+		   <title>Scholarship</title>
+		   <link>http://gammazetaalpha.ucsd.edu/scholarship/</link>
+		</page>
+		<page>
+		   <title>Events</title>
+		   <link>http://gammazetaalpha.ucsd.edu/events/</link>
+		</page>
+	</subPages>
+	
+</navigation>
