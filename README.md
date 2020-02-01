@@ -3,3 +3,4 @@ This is the official website code for Gamma Zeta Alpha Fraternity, Inc. Nu Chapt
 As webmaster of Nu Chapter, I am in charge of updating the website with official
 information concerning Nu Chapter's active members, alumni, upcoming events,
 rush  and annual scholarship.
+Link to website: gammazetaalpha.ucsd.edu
